@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Build</title>
+    <link rel="stylesheet" href="final.css">
+
+</head>
+<body>
+<header>
+    <h1>Final Build</h1>
+    <p>idm-241 Zijun Kang</p>
+</header>
+<div class="img1">
+    <img src="image/img1.jpg"/>
+    <div class="mark">
+        <div class="mark_icon">
+            <img src="image/icon2.png" class="icon_img icon_img1"/>
+            <img src="image/icon1.png" class="icon_img icon_img2"/>
+        </div>
+        <div class="mark_btn">Get Tickets</div>
+    </div>
+</div>
+<p>
+    <a href="https://www.amctheatres.com/movies" class="link">https://www.amctheatres.com/movies</a>
+</p>
+<div class="tab_list">
+    <div>
+        <h2>Triggers</h2>
+        <li>Hover on/off the Movie Picture.</li>
+        <li>Hover on/off the heart icon.</li>
+        <li>Click the heart icon.</li>
+        <li>Hover on/off the “Get Tickets” button.</li>
+        <li>Click the “Get Tickets” button.</li>
+        <li>Hover on/off the “Search” button.</li>
+
+        <li>Hover on/off the “Exit” button.</li>
+        <li>click the “Exit” button.</li>
+        <li>Type in the “search bar.”</li>
+    </div>
+    <div>
+        <h2>Rules</h2>
+        <div>Movie Picture:</div>
+        <ul>
+            <li>Hover on: the movie picture gets darker.</li>
+            <li>Hover on: the heart icon and “Get tickets” button appear.</li>
+            <li>Hover off: the movie picture get brighter.</li>
+            <li>Hover off: the heart icon and “Get tickets” button disappear.</li>
+        </ul>
+        <div>Heart icon:</div>
+        <ul>
+            <li>Hover on: cursor changes from default arrow to hand.</li>
+            <li>Hover off: cursor changes back from hand to default arrow.</li>
+            <li>First click the heart icon and the color changed to red.</li>
+            <li>Second click the hear icon the color changed from black to red.</li>
+            <li>When users click the heart icon, the database is updated.</li>
+        </ul>
+        <div>Get Tickets:</div>
+        <ul>
+            <li>Hover on: cursor changes from default arrow to hand.</li>
+            <li>Hover off: cursor changes back from hand to default arrow.</li>
+            <li>Hover on the “Get Tickets” button: the button’s color change darker.</li>
+            <li>Hover off the “Get Tickets” button: the button’s color change brighter.</li>
+            <li>Click the “Get Tickets” button: to open the “change location” mode.</li>
+        </ul>
+        <div>Location:</div>
+        <ul>
+            <li>Hover on the search bar, cursor changes from default arrow to caret.</li>
+            <li>Hover off the search bar, cursor changes back from caret arrow to default arrow.</li>
+            <li>Type on the search bar.</li>
+        </ul>
+        <div>Search icon:</div>
+        <ul>
+            <li>Hover on the search icon: cursor changes from default arrow to hand.</li>
+            <li>Hover off: cursor changes back from hand to default arrow</li>
+        </ul>
+
+        <div>Exit button:</div>
+        <ul>
+            <li>Hover on: cursor changes from default arrow to hand.</li>
+            <li>Hover off: cursor changes back from hand to default arrow</li>
+            <li>Click the exit button, the location mode closes.</li>
+        </ul>
+
+    </div>
+    <div>
+        <h2>Feedback</h2>
+        <div>Movie Picture:</div>
+        <ul>
+            <li>Hover on: the movie picture get darker.</li>
+            <li>Hover on: the heart icon and “Get tickets” button appear.</li>
+            <li>Hover off: the movie picture get brighter.</li>
+            <li>Hover off: the heart icon and “Get tickets” button disappear.</li>
+        </ul>
+        <div>Heart icon:</div>
+        <ul>
+            <li>Hover on: cursor changes from default arrow to hand.</li>
+            <li>Hover off: cursor changes back from hand to default arrow.</li>
+            <li>First click the heart icon and the color changed to red.</li>
+            <li>Second click the hear icon the color changed from black to red.</li>
+        </ul>
+        <div>Get Tickets:</div>
+        <ul>
+            <li>Hover on: cursor changes from default arrow to hand.</li>
+            <li>Hover off: cursor changes back from hand to default arrow.</li>
+            <li>Hover on the “Get Tickets” button: the button’s color change darker.</li>
+            <li>Hover off the “Get Tickets” button: the button’s color change brighter.</li>
+            <li>Click the “Get Tickets” button: to open the “change location” mode.</li>
+        </ul>
+
+        <div>Location:</div>
+        <ul>
+            <li>Hover on the search bar, cursor changes from default arrow to caret.</li>
+            <li>Hover off the search bar, cursor changes back from caret arrow to default arrow.</li>
+            <li>Type on the search bar.</li>
+        </ul>
+        <div>Exit button:</div>
+        <ul>
+            <li>Hover on: cursor changes from default arrow to hand.</li>
+            <li>Hover off: cursor changes back from hand to default arrow.</li>
+            <li>Click the exit button to close the Location mode.</li>
+        </ul>
+
+    </div>
+    <div>
+        <h2>Loops & Modes</h2>
+        <li>
+            There are no loops.
+        </li>
+        <li>
+            Location mode/heart icon.
+        </li>
+    </div>
+</div>
+<div class="mark_content">
+    <div class="back_con">
+        <div class="back_con_header">
+            <div class="location">Location</div>
+            <div class="icon3"><img src="image/icon3.png"/></div>
+        </div>
+        <div class="search_ipt">
+            <input type="text" placeholder="Search by City, Zip or Theatre">
+            <div class="icon4"><img src="image/icon4.png"/></div>
+        </div>
+    </div>
+</div>
+<script>
+    let icon_img1 = document.querySelector(".icon_img1")
+    let icon_img2 = document.querySelector(".icon_img2")
+    icon_img1.onclick = function () {
+        this.style.opacity = 0
+        icon_img2.style.opacity = 1
+        setTimeout(function () {
+            icon_img1.style.zIndex = 0
+            icon_img2.style.zIndex = 1
+        },300)
+    }
+    icon_img2.onclick = function () {
+        this.style.opacity = 0
+        icon_img1.style.opacity = 1
+        setTimeout(function () {
+            icon_img1.style.zIndex = 1
+            icon_img2.style.zIndex = 0
+        },300)
+    }
+    let icon3 = document.querySelector(".icon3")
+    let mark_content = document.querySelector(".mark_content")
+    let mark_btn = document.querySelector(".mark_btn")
+    icon3.onclick = function () {
+        mark_content.style.opacity = 0;
+        setTimeout(function () {
+            mark_content.style.display = 'none';
+        },600)
+
+    }
+    mark_btn.onclick = function () {
+        mark_content.style.display = 'block';
+        setTimeout(function () {
+            mark_content.style.opacity = 1;
+        },20)
+
+    }
+</script>
+</body>
+</html>

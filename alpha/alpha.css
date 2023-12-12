@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: #FFD104;
+    padding: 2vw 0;
+    text-align: center;
+    font-family: "DejaVu Math TeX Gyre";
+}
+header > p{
+    margin-top: 10px;
+}
+table{
+    width: 80%;
+    margin: 20px auto 0 auto;
+    border-collapse:collapse;
+    table-layout: fixed;
+}
+h2{
+    font-family: "DejaVu Math TeX Gyre";
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tdbody td{
+    padding: 20px;
+}
+.tdbody li{
+    font-size: 18px;
+    font-family: "DejaVu Math TeX Gyre";
+    margin-bottom: 10px;
+}
+.imgs{
+    width: 80%;
+    margin: 4vw auto 2vw auto;
+    display: flex;
+    justify-content: space-between;
+}
+.imgs>div{
+    width: 48%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.imgs h2{
+    text-align: left;
+}
+a{
+    color: #FF3D00;
+    font-family: Arial;
+}
+.tab_head {
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 960px){
+    table{
+        width: 90%;
+    }
+    .imgs{
+        width: 90%;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .tdbody li{
+        font-size: 16px;
+        font-family: "DejaVu Math TeX Gyre";
+    }
+    .tab_head {
+        padding: 10px 8px;
+        word-spacing: revert;
+        word-break: break-word;
+    }
+    header > p{
+        margin-top: 5px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .tdbody td{
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    table{
+        width: 95%;
+    }
+    .imgs{
+        width: 95%;
+        display: block;
+    }
+    .imgs>div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .tdbody li{
+        font-size: 14px;
+        font-family: "DejaVu Math TeX Gyre";
+    }
+    h1{
+        font-size: 20px;
+    }
+    .tdbody td{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 320px){
+    h2{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .tdbody li{
+        font-size: 10px;
+        font-family: "DejaVu Math TeX Gyre";
+    }
+    .tdbody td{
+        padding: 4px;
+    }
+    li{
+        list-style: none;
+    }
+}
